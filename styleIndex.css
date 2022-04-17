@@ -1,0 +1,1142 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 83%;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.backgroud {
+    background:
+        /* url(https://caodang.fpt.edu.vn/wp-content/uploads/179133859_1390460777993405_366676460905399720_n.png); */
+        url(./hinhanh/background\ 2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* -----------------------------navigation top------------------------------ */
+/* Điểm mạnh của fpoly */
+.test {
+    background: repeat fixed 100% url("https://caodang.fpt.edu.vn/wp-content/uploads/FPT_Polytechnic_banner-1-2.jpg");
+    height: 300px;
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.test ul {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 100%;
+}
+
+.test ul li {
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+    margin: 20px;
+    width: 16%;
+}
+
+.test ul li::before {
+    content: "";
+    position: absolute;
+    border-left: 2px solid #f27125;
+    border-top: 2px solid #f27125;
+    width: 55px;
+    height: 30px;
+    left: 0;
+    top: 0;
+    transition: .5s;
+    -webkit-transition: .5s;
+}
+
+.test ul li::after {
+    content: "";
+    position: absolute;
+    border-right: 2px solid #f27125;
+    border-bottom: 2px solid #f27125;
+    width: 55px;
+    height: 30px;
+    right: 0;
+    bottom: 0;
+    transition: .5s;
+    -webkit-transition: .5s;
+}
+
+.test ul li:hover::after {
+    width: 98%;
+    height: 98%
+}
+
+.test ul li:hover::before {
+    height: 98%;
+    width: 99%
+}
+
+/*  */
+/* Đối tác */
+.test-js {
+    text-align: center;
+    background: repeat fixed 100% url("https://caodang.fpt.edu.vn/wp-content/uploads/FPT_Polytechnic_banner-1-2.jpg");
+    height: 300px;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+.slide-js {
+    /* position: relative; */
+    width: 90%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.your-class {
+    /* top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute; */
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.your-class img {
+    width: 50%;
+    height: 50%;
+}
+
+/*  */
+
+header {
+    width: 100%;
+    position: fixed;
+    transition: all 0.5s ease-in-out;
+    padding-top: 5px;
+    z-index: 2;
+}
+
+
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.form-logo {
+    width: 15%;
+    margin-bottom: -4px;
+    float: left;
+}
+
+.form-logo img {
+    width: 100%;
+}
+
+
+
+/* -----------hover navigation top----------------- */
+
+#navbars {
+    float: right;
+    /* overflow: hidden; */
+}
+
+.main-menu {
+    list-style-type: none;
+    /* overflow: hidden; */
+
+}
+
+.main-menu #toggle {
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.main-menu ul .icon {
+    font-size: 15px;
+    color: white;
+    display: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+
+}
+
+.main-menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 33px 30px 32px 30px;
+    /* font-weight: lighter; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+.main-menu li {
+    transition: 0.4s;
+    display: inline-block;
+    text-align: center;
+    padding: 33px 10px 0px 10px;
+}
+
+.main-menu li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    margin-top: 15px;
+    background: #fc7a00;
+    transition: width .3s;
+}
+
+.main-menu li:hover::after {
+    width: 100%;
+    transition: width .4s;
+
+}
+
+
+header.sticky {
+    /* background: rgb(235, 235, 235); */
+    background: #1b453e;
+    /* opacity: 0.8; */
+    height: 90px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+header.sticky a {
+    color: white;
+}
+
+header.sticky li {
+    padding-top: 30px;
+}
+
+
+
+
+
+
+/* -------------------------content header----------------------- */
+
+.form-content {
+    display: flex;
+    width: 100%;
+    height: 700px;
+    align-items: center;
+    padding-top: 80px;
+    z-index: 1;
+}
+
+.form-content-left {
+    display: inline;
+    width: 40%;
+    /* margin-left: 8%; */
+}
+
+.content-d1 {
+    color: white;
+    font-weight: lighter;
+    margin: 0 0 50px 0;
+    width: 100%;
+}
+
+.content-d2 p {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    width: 100%;
+}
+
+.content-d3 {
+    color: white;
+    font-weight: lighter;
+    margin: 30px 0 50px 0;
+    width: 100%;
+}
+
+.content-btn-d4 {
+    background-color: rgb(241, 118, 3);
+    width: 35%;
+    text-align: center;
+    border-radius: 15px;
+    padding: 15px 10px;
+
+
+}
+
+.content-btn-d4 p {
+    color: white;
+    width: 100%;
+}
+
+
+.form-content-right {
+    width: 70%;
+    text-align: right;
+}
+
+.form-content-right img {
+    width: 70%;
+}
+
+.content-header {
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    height: auto;
+}
+
+.content-header .text-content-header {
+    width: 40%;
+    position: relative;
+    height: 500px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.position {
+    position: absolute;
+    left: 5%;
+}
+
+/*  */
+.group-text-content {
+    padding-bottom: 50px
+}
+
+.group-text-content img {
+    width: 80%;
+}
+
+.group-text-content p {
+    padding-top: 36px;
+}
+
+
+/* btn gioi thieu */
+.btn-header button {
+    padding: 15px;
+    text-align: center;
+    width: 144px;
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+    background-color: #f27125;
+}
+
+/* video header */
+.content-header .video-content-header {
+    width: 60%;
+    position: relative;
+    /* background-color: aliceblue; */
+}
+
+.content-header .video-content-header img {
+    /* position: absolute; */
+    /* top: 40%; */
+    /* left:10%; */
+    width: 40%;
+}
+
+.content-header .video-content-header .img1 {
+    position: absolute;
+    top: 12%;
+    left: 3%;
+
+
+}
+
+.content-header .video-content-header .img2 {
+    position: absolute;
+    bottom: 0;
+    left: 39%;
+    width: 28%;
+}
+
+.content-header .video-content-header .img3 {
+    position: absolute;
+    top: 16%;
+    left: 60%;
+}
+
+/* li do chon fpoly */
+.content-li-do {
+    margin-top: 50px
+}
+
+.item {
+    width: 100%;
+    padding: 10px;
+}
+
+.title-all {
+    text-align: center;
+}
+
+.line-bottom {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    display: block;
+    content: "";
+    background: #f27125;
+    height: 3px;
+}
+
+.title-all p {
+    color: #303030;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 32px;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.left-item {
+    width: 40%;
+    text-align: right;
+    height: 370px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-direction: column-reverse;
+    margin-top: 60px;
+}
+
+.left-top-item .item {
+    margin-top: 15px
+}
+
+.middle-item {
+    width: 70%;
+    text-align: center;
+    border-radius: 100%;
+    border-color: #fff;
+    border: 1px solid #f27125;
+    margin: 0 7%;
+}
+
+.middle-item img {
+    width: 450px;
+    height: 450px;
+    margin: 20px;
+    border-radius: 100%;
+}
+
+.right-item {
+    width: 40%;
+    height: 362px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-direction: column-reverse;
+    margin-top: 61px;
+}
+
+/* gioi thieu */
+#content-gioi-thieu {
+    background-color: #f6f6f6;
+}
+
+.content-gioi-thieu {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.img-gioi-thieu {
+    width: 55%;
+}
+
+.text-gioi-thieu {
+    width: 45%;
+    padding-right: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.title-all h6 {
+    font-size: 16px;
+    color: #303030 !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: none;
+    font-weight: 100;
+    line-height: 20px;
+    margin-top: 40px;
+}
+
+.smalls-img-gioi-thieu img,
+.smalls-img-gioi-thieu video {
+    width: 260px;
+    height: 250px;
+    padding: 0px 0px 10px 20px
+}
+
+.big-img-gioi-thieu img {
+    width: 400px;
+    height: 496px
+}
+
+/* ---------------------------slidershow middle------------------------ */
+
+
+.slidershow {
+    width: 100%;
+    margin-top: 50px;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .slidershow p {
+      font-size: 30px;
+      margin: 40px;
+  } */
+
+.navigation {
+    width: 83%;
+    height: 40px;
+    position: absolute;
+    justify-content: space-between;
+}
+
+.bar {
+    width: 10.5%;
+    transition: 0.4s;
+    display: inline-block;
+    margin: 30px 20px;
+    font-size: 20px;
+}
+
+.bar::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    margin-bottom: 5px;
+    background: #FED52C;
+    transition: width .3s;
+}
+
+.bar:hover::after {
+    width: 100%;
+    transition: width .4s;
+
+}
+
+.bar:hover {
+    color: #FED52C;
+    transition: .9s;
+
+}
+
+
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 100%;
+    margin-top: 100px;
+
+    display: flex;
+}
+
+.slide {
+    width: 20%;
+    background-color: #f7f7f7;
+    transition: 0.6s;
+}
+
+#r1:checked~.s1 {
+    margin-left: 0;
+}
+
+#r2:checked~.s1 {
+    margin-left: -20%;
+}
+
+#r3:checked~.s1 {
+    margin-left: -40%;
+}
+
+#r4:checked~.s1 {
+    margin-left: -60%;
+}
+
+#r5:checked~.s1 {
+    margin-left: -80%;
+}
+
+#content-event {
+    padding-bottom: 70px;
+}
+
+.big-content-event {
+    padding: 20px;
+    width: 50%;
+    height: 588px;
+    position: relative;
+    /* background-color:#192041; */
+}
+
+.item-left-event {
+    /* background-color:#f27125; */
+    /* background-image: url("https://images.samsung.com/is/image/samsung/assets/vn/home/2022/OB_684x684_PC.jpg?$684_684_JPG$"); */
+    width: 100%;
+    height: 590px;
+    border-radius: 30px;
+    text-align: center;
+    background-image: url("./hinhanh/liveshow1.jpg");
+    /* background-size:cover; */
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+/* RIGHT EVENT */
+.small-content-events {
+    /* background-color: #192041; */
+    padding: 20px;
+    width: 50%;
+    display: grid;
+    gap: 20px 20px;
+    grid-template-columns: auto auto;
+
+}
+
+
+.small-content-events .grid-item {
+    background-color: #f27125;
+    width: 100%;
+    height: 284px;
+    border-radius: 30px;
+}
+
+/* s1 */
+.grid1 {
+    background-image: url("./hinhanh/live2.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.grid2 {
+    background-image: url("./hinhanh/live3.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.grid3 {
+    background-image: url("./hinhanh/live4.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.grid4 {
+    background-image: url("./hinhanh/live5.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+
+}
+
+/* s2 */
+.s2 .item-left-event {
+    /* background-color:#f27125; */
+    /* background-image: url("https://images.samsung.com/is/image/samsung/assets/vn/home/2022/OB_684x684_PC.jpg?$684_684_JPG$"); */
+    width: 100%;
+    border-radius: 30px;
+    text-align: center;
+    background-image: url("./hinhanh/hoc1.jpg");
+    /* background-size:cover; */
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;
+}
+
+.s2 .grid1 {
+    background-image: url("./hinhanh/hoc2.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.s2 .grid2 {
+    background-image: url("./hinhanh/hoc3.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.s2 .grid3 {
+    background-image: url("./hinhanh/hoc4.png");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.s2 .grid4 {
+    background-image: url("./hinhanh/hoc5.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+
+}
+
+/*  s3*/
+
+.s3 .item-left-event {
+    /* background-color:#f27125; */
+    /* background-image: url("https://images.samsung.com/is/image/samsung/assets/vn/home/2022/OB_684x684_PC.jpg?$684_684_JPG$"); */
+    width: 100%;
+    border-radius: 30px;
+    text-align: center;
+    background-image: url("./hinhanh/thao1.jpg");
+    /* background-size:cover; */
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;
+}
+
+.s3 .grid1 {
+    background-image: url("./hinhanh/thao2.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.s3 .grid2 {
+    background-image: url("./hinhanh/thao3.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.s3 .grid3 {
+    background-image: url("./hinhanh/thao4.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.s3 .grid4 {
+    background-image: url("./hinhanh/thao5.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+
+}
+
+/*  s3*/
+
+.s4 .item-left-event {
+    /* background-color:#f27125; */
+    /* background-image: url("https://images.samsung.com/is/image/samsung/assets/vn/home/2022/OB_684x684_PC.jpg?$684_684_JPG$"); */
+    width: 100%;
+    border-radius: 30px;
+    text-align: center;
+    background-image: url("./hinhanh/nguyen1.png");
+    /* background-size:cover; */
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;
+}
+
+.s4 .grid1 {
+    background-image: url("./hinhanh/nguyen2.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.s4 .grid2 {
+    background-image: url("./hinhanh/nguyen3.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.s4 .grid3 {
+    background-image: url("./hinhanh/nguyen4.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.s4 .grid4 {
+    background-image: url("./hinhanh/nguyen5.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+
+}
+
+/*  s5*/
+
+.s5 .item-left-event {
+    /* background-color:#f27125; */
+    /* background-image: url("https://images.samsung.com/is/image/samsung/assets/vn/home/2022/OB_684x684_PC.jpg?$684_684_JPG$"); */
+    width: 100%;
+    border-radius: 30px;
+    text-align: center;
+    background-image: url("./hinhanh/dong2.png");
+    /* background-size:cover; */
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;
+}
+
+.s5 .grid1 {
+    background-image: url("./hinhanh/dong1.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.s5 .grid2 {
+    background-image: url("./hinhanh/dong3.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.s5 .grid3 {
+    background-image: url("./hinhanh/dong4.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.s5 .grid4 {
+    background-image: url("./hinhanh/hoat5.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+
+}
+
+/* -------------------------footer----------------------- */
+
+
+
+footer {
+    width: 100%;
+    border-top: 10px solid #f27125;
+    background-color: #192041;
+    color: #fff;
+    padding-top: 50px;
+    margin-top: 70px;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.col-1,
+.col-2,
+.col-3 {
+    width: 32%;
+
+}
+
+footer a {
+    color: #fff;
+}
+
+
+/* .col-1{
+    margin-right: 30px;
+} */
+.col-1 img {
+    width: 80%;
+}
+
+.col-1 p {
+    line-height: 50px;
+    font-size: 12px;
+}
+
+.col-1-img {
+    width: 80%;
+}
+
+.col-1-img .i1 {
+    background-color: #f27125;
+    padding: 7px;
+    border-radius: 20px;
+}
+
+.col-1-img .i2 {
+    background-color: #f27125;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.col-1-img .i3 {
+    background-color: #f27125;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.col-1-img .i4 {
+    background-color: #f27125;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.col-1-img img {
+    width: 15%;
+    /* background-color: #fff; */
+    /* border-radius: 100%; */
+    margin: 5px;
+}
+
+.col-2 {
+    line-height: 2em;
+    font-size: 12px;
+    margin-right: 30px;
+}
+
+.col-3 {
+    padding-top: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    /* margin-right: 8%; */
+}
+
+.group-content-footer {
+    padding-top: 5px;
+}
+
+.group-content-footer p img {
+    width: 4%;
+    height: 10%;
+}
+
+.bot-header {
+    width: 100%;
+    background-color: #fff;
+    height: 50px;
+}
+
+.bot-header p {
+    color: black;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.left-item .img-item {
+    margin-top: 10px
+}
+
+.hide {
+    display: none;
+}
+
+.right-item .img-item {
+    margin-top: 8px
+}
+
+.phanhoi2,
+.phanhoi3 {
+    display: none
+}
+
+.doitac2 {
+    display: none
+}
+
+.padding-doitac {
+    padding-top: 30px
+}
+
+/* .btn-header button{
+    width: 140px;
+    height: 50px;
+    border-radius: 5px;
+    color: #F27125;
+    transition:  ease-out 0.3s;
+    outline: none;
+    border: 4px solid  #F27125;
+    position: relative;
+    z-index: 1;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0);
+
+} */
+.btn-header button:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-header button:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+
+    left: 50%;
+    right: 50%;
+    bottom: -10%;
+    opacity: 0;
+    content: "";
+    /* background: #F27125; */
+    cursor: pointer;
+}
+
+.btn-header button:hover::before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+    cursor: pointer;
+
+}
+
+.image__overlay {
+    position: absolute;
+    top: 55%;
+    left: 20px;
+    width: 94.5%;
+    height: 50%;
+    border-radius: 11%;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease 0s;
+    cursor: pointer;
+
+}
+
+.image__overlay1 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 50%;
+    border-radius: 12%;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease 0s;
+    cursor: pointer;
+}
+
+.image__overlay1>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay1:hover {
+    opacity: 1;
+
+    background: linear-gradient(0deg, #bfbfbf, transparent);
+}
+
+.image__overlay1:hover>* {
+    transform: translateY(0);
+}
+
+.image__overlay>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+
+    background: linear-gradient(0deg, #bfbfbf, transparent);
+}
+
+.image__overlay:hover>* {
+    transform: translateY(0);
+}
+
+.close {
+    cursor: pointer;
+    position: relative;
+    left: 100%;
+}
+
+.close img {
+    width: 15px;
+    height: 15px
+}
+
+.bot-footer {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+}
+.bot-footer ul li iframe{
+    width:426px ;
+    height:240px
+}
